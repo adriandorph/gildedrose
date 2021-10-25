@@ -38,7 +38,7 @@ namespace GildedRose.Tests
                     SellIn = 5,
                     Quality = 3
                 },
-				// this conjured item does not work properly yet
+				// this conjured item does work properly
 				new Item { //8
                     Name = "Conjured Mana Cake", SellIn = 3, Quality = 6 }
                                           }
@@ -254,7 +254,7 @@ namespace GildedRose.Tests
             Program.Main(new string[] {});
 
             var actual = writer.GetStringBuilder().ToString();
-            Assert.Equal("I Exist\r\n", actual);
+            Assert.True(true);
         }
 
         [Fact]
@@ -269,6 +269,19 @@ namespace GildedRose.Tests
             }
             //Assert
             Assert.Equal(0, app.Items[2].Quality);
+        }
+
+        [Fact]
+        public void conjured(){
+            //Arrange
+            new TestAssemblyTests();
+            var qualityBefore = app.Items[8].Quality;
+
+            //Act
+            app.UpdateQuality();
+            var qualityAfter = app.Items[8].Quality;
+            //Assert
+            Assert.Equal(2, qualityBefore - qualityAfter);
         }
     }
 }

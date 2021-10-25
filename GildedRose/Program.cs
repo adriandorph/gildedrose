@@ -1,4 +1,5 @@
-﻿using System;
+﻿                    //Quality increases by 1
+using System;
 using System.Collections.Generic;
 
 namespace GildedRose
@@ -10,8 +11,6 @@ namespace GildedRose
         public IList<bool> conjured;
         public static void Main(string[] args)
         {
-            Console.WriteLine("I Exist");
-           /* System.Console.WriteLine("OMGHAI!");
             var app = new Program()
                           {
                               Items = new List<Item>
@@ -56,89 +55,89 @@ namespace GildedRose
                 Console.WriteLine("");
                 app.UpdateQuality();
             }
-*/
         }
 
         public void UpdateQuality()
         {
             for (var i = 0; i < Items.Count; i++)
             {
-                if (Items[i].Name != "Aged Brie" && Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
-                {
-                    if (Items[i].Quality > 0)
-                    {
-                        if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
-                        {
-                            Items[i].Quality = Items[i].Quality - 1;
-                            
-                        }
-                    }
+                int qualityChange;
+                //GENERAL RULES:
+                //Quality of an item is never more than 50 (Only relevant for Aged Brie and backstage pass, since it increases in quality)
+                
+                //SellIn decreases by one
+                Items[i].SellIn -= 1;
+                
+                switch(Items[i].Name){
+                    case "Aged Brie":
+                    //Quality increases by 1 (if below 50)
+                    qualityChange = AgedBrieUpdate();
+                    break;
+
+                    case string a when a.Contains("Sulfuras"):
+                    //Quality and Sell in never changes
+                    qualityChange = SulfurasUpdate(i);
+                    break;
+
+                    case string b when b.Contains("Backstage pass"):
+                    //Quality increases by 2 less than 10 days, 3, less than 5 days. 0 when -1 days
+                    qualityChange = BackstageUpdate(i);
+                    break;
+
+                    case string c when c.Contains("Conjured"):
+                    //Quality degrades twice as fast
+                    qualityChange = ConjuredUpdate();
+                    break;
+                    
+                    default:
+                    qualityChange = DefaultUpdate();
+                    break;
                 }
-                else
-                {
-                    if (Items[i].Quality < 50)
-                    {
-                        Items[i].Quality = Items[i].Quality + 1;
-                        if (Items[i].Name == "Backstage passes to a TAFKAL80ETC concert")
-                        {
-                            if (Items[i].SellIn < 11)
-                            {
-                                if (Items[i].Quality < 50)
-                                {
-                                    Items[i].Quality = Items[i].Quality + 1;
-                                }
-                            }
-                            if (Items[i].SellIn < 6)
-                            {
-                                if (Items[i].Quality < 50)
-                                {
-                                    Items[i].Quality = Items[i].Quality + 1;
-                                }
-                            }
-                        }
-                    }
-                }
-                if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
-                {
-                    Items[i].SellIn = Items[i].SellIn - 1;
-                }
-                if (Items[i].SellIn < 0)
-                {
-                    if (Items[i].Name != "Aged Brie")
-                    {
-                        if (Items[i].Name != "Backstage passes to a TAFKAL80ETC concert")
-                        {
-                            if (Items[i].Quality > 0)
-                            {
-                                if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
-                                {
-                                    Items[i].Quality = Items[i].Quality - 1;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            Items[i].Quality = Items[i].Quality - Items[i].Quality;
-                        }
-                    }
-                    else
-                    {
-                        if (Items[i].Quality < 50)
-                        {
-                            Items[i].Quality = Items[i].Quality + 1;
-                        }
+
+                
+                
+                //General stuff
+                if(qualityChange != 0)
+                {//If qualityChange is 0 it is Sulfuras
+                    if(Items[i].SellIn < 0) qualityChange *= 2;
+                    if(Items[i].Quality + qualityChange < 50 && Items[i].Quality + qualityChange >= 0){
+                        Items[i].Quality += qualityChange;           
                     }
                 }
             }
         }
-    }
-    public class Item
+
+    private int DefaultUpdate()
     {
-        public string Name { get; set; }
-
-        public int SellIn { get; set; }
-
-        public int Quality { get; set; }
+        return -1;
+    }
+    
+    private int SulfurasUpdate(int index){
+        Items[index].SellIn +=1;
+        return 0;
     }
 
+     private int BackstageUpdate(int index){
+        int qualityChange = 1;
+        int SellIn = Items[index].SellIn;
+        if(SellIn < 0) 
+        {
+            Items[index].Quality = 0;
+            return 0;
+        }
+        else if(SellIn <= 10){
+            qualityChange += 1;
+            if(SellIn <= 5) qualityChange += 1;
+        }
+        return qualityChange;
+    }
+    
+    private int ConjuredUpdate(){
+        return -2;
+    }
+    
+     private int AgedBrieUpdate(){
+        return 1;     
+    }
+}
 }
