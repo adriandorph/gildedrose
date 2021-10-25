@@ -3,13 +3,15 @@ using System.Collections.Generic;
 
 namespace GildedRose
 {
-    class Program
+    public class Program
     {
-        IList<Item> Items;
-        static void Main(string[] args)
-        {
-            System.Console.WriteLine("OMGHAI!");
+        public IList<Item> Items;
 
+        public IList<bool> conjured;
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("I Exist");
+           /* System.Console.WriteLine("OMGHAI!");
             var app = new Program()
                           {
                               Items = new List<Item>
@@ -54,7 +56,7 @@ namespace GildedRose
                 Console.WriteLine("");
                 app.UpdateQuality();
             }
-
+*/
         }
 
         public void UpdateQuality()
@@ -68,6 +70,7 @@ namespace GildedRose
                         if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
                         {
                             Items[i].Quality = Items[i].Quality - 1;
+                            
                         }
                     }
                 }
@@ -76,7 +79,6 @@ namespace GildedRose
                     if (Items[i].Quality < 50)
                     {
                         Items[i].Quality = Items[i].Quality + 1;
-
                         if (Items[i].Name == "Backstage passes to a TAFKAL80ETC concert")
                         {
                             if (Items[i].SellIn < 11)
@@ -86,7 +88,6 @@ namespace GildedRose
                                     Items[i].Quality = Items[i].Quality + 1;
                                 }
                             }
-
                             if (Items[i].SellIn < 6)
                             {
                                 if (Items[i].Quality < 50)
@@ -97,12 +98,10 @@ namespace GildedRose
                         }
                     }
                 }
-
                 if (Items[i].Name != "Sulfuras, Hand of Ragnaros")
                 {
                     Items[i].SellIn = Items[i].SellIn - 1;
                 }
-
                 if (Items[i].SellIn < 0)
                 {
                     if (Items[i].Name != "Aged Brie")
@@ -132,9 +131,7 @@ namespace GildedRose
                 }
             }
         }
-
     }
-
     public class Item
     {
         public string Name { get; set; }

@@ -1,0 +1,397 @@
+{
+  "GildedRose.dll": {
+    "C:\\Users\\Adrian\\Desktop\\gildedrose\\GildedRose\\Program.cs": {
+      "GildedRose.Program": {
+        "System.Void GildedRose.Program::Main(System.String[])": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "58": 1
+          },
+          "Branches": []
+        },
+        "System.Void GildedRose.Program::UpdateQuality()": {
+          "Lines": {
+            "61": 101,
+            "62": 2020,
+            "63": 909,
+            "64": 909,
+            "65": 505,
+            "66": 505,
+            "67": 331,
+            "68": 331,
+            "69": 129,
+            "70": 129,
+            "71": 129,
+            "72": 331,
+            "73": 505,
+            "75": 404,
+            "76": 404,
+            "77": 378,
+            "78": 378,
+            "79": 378,
+            "80": 282,
+            "81": 282,
+            "82": 250,
+            "83": 250,
+            "84": 250,
+            "85": 250,
+            "86": 250,
+            "87": 250,
+            "88": 282,
+            "89": 201,
+            "90": 201,
+            "91": 201,
+            "92": 201,
+            "93": 201,
+            "94": 201,
+            "95": 282,
+            "96": 378,
+            "97": 404,
+            "98": 909,
+            "99": 707,
+            "100": 707,
+            "101": 707,
+            "102": 909,
+            "103": 467,
+            "104": 467,
+            "105": 463,
+            "106": 463,
+            "107": 301,
+            "108": 301,
+            "109": 122,
+            "110": 122,
+            "111": 21,
+            "112": 21,
+            "113": 21,
+            "114": 122,
+            "115": 301,
+            "117": 162,
+            "118": 162,
+            "119": 162,
+            "120": 463,
+            "122": 4,
+            "123": 4,
+            "124": 1,
+            "125": 1,
+            "126": 1,
+            "127": 4,
+            "128": 467,
+            "129": 909,
+            "130": 101
+          },
+          "Branches": [
+            {
+              "Line": 62,
+              "Offset": 899,
+              "EndOffset": 8,
+              "Path": 1,
+              "Ordinal": 35,
+              "Hits": 909
+            },
+            {
+              "Line": 64,
+              "Offset": 36,
+              "EndOffset": 38,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 808
+            },
+            {
+              "Line": 64,
+              "Offset": 36,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 101
+            },
+            {
+              "Line": 64,
+              "Offset": 70,
+              "EndOffset": 72,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 505
+            },
+            {
+              "Line": 66,
+              "Offset": 95,
+              "EndOffset": 97,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 331
+            },
+            {
+              "Line": 68,
+              "Offset": 127,
+              "EndOffset": 129,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 129
+            },
+            {
+              "Line": 68,
+              "Offset": 127,
+              "EndOffset": 168,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 331
+            },
+            {
+              "Line": 66,
+              "Offset": 95,
+              "EndOffset": 169,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 505
+            },
+            {
+              "Line": 64,
+              "Offset": 70,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 404
+            },
+            {
+              "Line": 76,
+              "Offset": 201,
+              "EndOffset": 206,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 378
+            },
+            {
+              "Line": 79,
+              "Offset": 275,
+              "EndOffset": 280,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 282
+            },
+            {
+              "Line": 81,
+              "Offset": 306,
+              "EndOffset": 308,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 250
+            },
+            {
+              "Line": 83,
+              "Offset": 334,
+              "EndOffset": 336,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 250
+            },
+            {
+              "Line": 83,
+              "Offset": 334,
+              "EndOffset": 375,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 250
+            },
+            {
+              "Line": 81,
+              "Offset": 306,
+              "EndOffset": 376,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 282
+            },
+            {
+              "Line": 88,
+              "Offset": 400,
+              "EndOffset": 402,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 201
+            },
+            {
+              "Line": 90,
+              "Offset": 428,
+              "EndOffset": 430,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 201
+            },
+            {
+              "Line": 90,
+              "Offset": 428,
+              "EndOffset": 469,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 201
+            },
+            {
+              "Line": 88,
+              "Offset": 400,
+              "EndOffset": 470,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 282
+            },
+            {
+              "Line": 79,
+              "Offset": 275,
+              "EndOffset": 471,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 378
+            },
+            {
+              "Line": 76,
+              "Offset": 201,
+              "EndOffset": 472,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 404
+            },
+            {
+              "Line": 98,
+              "Offset": 504,
+              "EndOffset": 506,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 707
+            },
+            {
+              "Line": 98,
+              "Offset": 504,
+              "EndOffset": 545,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 909
+            },
+            {
+              "Line": 102,
+              "Offset": 569,
+              "EndOffset": 574,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 467
+            },
+            {
+              "Line": 104,
+              "Offset": 606,
+              "EndOffset": 611,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 463
+            },
+            {
+              "Line": 106,
+              "Offset": 643,
+              "EndOffset": 645,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 301
+            },
+            {
+              "Line": 108,
+              "Offset": 670,
+              "EndOffset": 672,
+              "Path": 0,
+              "Ordinal": 28,
+              "Hits": 122
+            },
+            {
+              "Line": 110,
+              "Offset": 704,
+              "EndOffset": 706,
+              "Path": 0,
+              "Ordinal": 30,
+              "Hits": 21
+            },
+            {
+              "Line": 110,
+              "Offset": 704,
+              "EndOffset": 745,
+              "Path": 1,
+              "Ordinal": 31,
+              "Hits": 122
+            },
+            {
+              "Line": 108,
+              "Offset": 670,
+              "EndOffset": 746,
+              "Path": 1,
+              "Ordinal": 29,
+              "Hits": 301
+            },
+            {
+              "Line": 106,
+              "Offset": 643,
+              "EndOffset": 749,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 162
+            },
+            {
+              "Line": 104,
+              "Offset": 606,
+              "EndOffset": 807,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 4
+            },
+            {
+              "Line": 123,
+              "Offset": 833,
+              "EndOffset": 835,
+              "Path": 0,
+              "Ordinal": 32,
+              "Hits": 1
+            },
+            {
+              "Line": 123,
+              "Offset": 833,
+              "EndOffset": 874,
+              "Path": 1,
+              "Ordinal": 33,
+              "Hits": 4
+            },
+            {
+              "Line": 102,
+              "Offset": 569,
+              "EndOffset": 876,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 909
+            },
+            {
+              "Line": 62,
+              "Offset": 899,
+              "EndOffset": 904,
+              "Path": 0,
+              "Ordinal": 34,
+              "Hits": 101
+            }
+          ]
+        }
+      },
+      "GildedRose.Item": {
+        "System.String GildedRose.Item::get_Name()": {
+          "Lines": {
+            "134": 4621
+          },
+          "Branches": []
+        },
+        "System.Int32 GildedRose.Item::get_SellIn()": {
+          "Lines": {
+            "136": 3142
+          },
+          "Branches": []
+        },
+        "System.Int32 GildedRose.Item::get_Quality()": {
+          "Lines": {
+            "138": 4366
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
